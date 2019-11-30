@@ -82,7 +82,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
 }
 
 #card {
@@ -215,6 +214,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ba7b5', e
   justify-content: center;
   align-items: center;
   line-height: 30px;
+  overflow: auto;
 }
 
 #contact table td{
