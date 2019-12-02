@@ -108,7 +108,6 @@ body {
 }
 
 #menu ul li{
-  padding: auto 0;
   display: grid;
   grid-template-rows: 1fr;
   height: 35px;
@@ -133,8 +132,9 @@ body {
   background-color:hsla(290,60%,70%,0.3)
 }
 #content, .news{
-  padding: 10px;
+  padding: 20px 10px 20px 10px;
 }
+
 
 #menu::after {
   content: "";
@@ -146,14 +146,17 @@ background: -moz-linear-gradient(left,  rgba(155,167,181,0) 0%, rgba(155,167,181
 background: -webkit-linear-gradient(left,  rgba(155,167,181,0) 0%,rgba(155,167,181,0.51) 12%,rgba(155,167,181,1) 30%,rgba(155,167,181,1) 49%,rgba(155,167,181,1) 70%,rgba(155,167,181,0.65) 86%,rgba(155,167,181,0) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  rgba(155,167,181,0) 0%,rgba(155,167,181,0.51) 12%,rgba(155,167,181,1) 30%,rgba(155,167,181,1) 49%,rgba(155,167,181,1) 70%,rgba(155,167,181,0.65) 86%,rgba(155,167,181,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ba7b5', endColorstr='#009ba7b5',GradientType=1 ); /* IE6-9 */
-
-
 }
 
 h1 {
   text-align: center;
   padding: 5px 5px 10px 5px;
   font-weight: 700;
+  padding-bottom: 5px;
+}
+
+p {
+ padding-top: 20px;
 }
 
 #content p, .news p{
@@ -175,24 +178,42 @@ h1 {
   filter: grayscale(20%);
 }
 
-.news img {
-  width: 150px;
-  height: 150px;
-  float: left;
-  padding: 10px 10px 10px 0;
+.news-image {
+  max-width: 20%;
+  height: auto;
 }
 
-#newsfeed {
-  max-height: 75vh;
+.news-image:hover {
+  transform: scale(3);
+  transition: all 0.5s ease-in-out;
+  overflow: visible;
+  z-index: 1;
+}
+
+.imagecontainer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#newsfeed, #content {
+  max-height: 70vh;
   overflow: auto;
 }
+
 .date {
-  float:right;
+  text-align: right;
+  font-size: 14px;
 }
+
+
 
 footer {
   padding: 10px;
   line-height: 20px;
+}
+
+footer p {
+  padding: 0;
 }
 
 footer::before {
