@@ -176,10 +176,10 @@ p {
 }
 
 #avatar {
-  width: 150px;
-  height: 150px;
+  max-width: 200px;
+  height: auto;
   float: left;
-  padding: 10px 10px 10px 0;
+  padding: 40px 10px 10px 0;
   border-radius: 50%;
   filter: grayscale(50%);
 }
